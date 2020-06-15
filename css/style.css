@@ -1,0 +1,106 @@
+.background-img {
+  background-image: url("../img/bg-01.jpg");
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Form styles */
+form {
+  width: 500px;
+}
+.txt-center {
+  text-align: center;
+}
+/* logo */
+
+.logo img {
+  padding:10px;
+  border-radius: 4px;
+  background: rgba(255, 255, 2555, 0.8);
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100px;
+  margin: 25px 0 0 38px; }
+  @media screen and (max-width: 768px) {
+    .logo img {
+      width: 20%;
+      margin: 12px 0 0 12px; } }
+/* input {
+  border-radius: 5px !important;
+}
+table {
+  border-radius: 5px;
+} */
+.btn-hover {
+  text-align: center;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px 0 10px 0;
+  height: 55px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 10px;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-hover:hover {
+  background-position: 100% 0;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-hover {
+  background-image: -webkit-linear-gradient(
+    to right,
+    #00dbde,
+    #fc00ff,
+    #00dbde,
+    #fc00ff
+  );
+  background-image: -o-linear-gradient(
+    to right,
+    #00dbde,
+    #fc00ff,
+    #00dbde,
+    #fc00ff
+  );
+  background-image: -moz-linear-gradient(
+    to right,
+    #00dbde,
+    #fc00ff,
+    #00dbde,
+    #fc00ff
+  );
+  background-image: linear-gradient(
+    to right,
+    #00dbde,
+    #fc00ff,
+    #00dbde,
+    #fc00ff
+  );
+}
+
+.myNone {
+  display: none;
+}

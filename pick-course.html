@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="icon" href="./img/Asset 6.png" type="image/svg+xml" sizes="any">
+
+  <title>Course-Register</title>
+</head>
+
+<body>
+  <style>
+    @media screen and (max-width: 700px) {
+      .logo {
+        display: none;
+      }
+
+    }
+  </style>
+  <div class="background-img p-2" id="top">
+    <div class="logo"><img src="./img/Asset 2.svg"></div>
+    <form class="needs-validation CourseForm rounded-lg bg-white p-4" novalidate>
+      <h2 class="txt-center mb-4">Register a Course</h2>
+      <div class="form-group">
+        <label for="courseId">Course number:</label>
+        <div class="input-group">
+          <input id="courseId" type="number" class="form-control rounded-lg" placeholder="Course number" maxlength="15"
+            required minlength="10" />
+          <div class="invalid-feedback">
+            Course number must be 10 - 15 characters long.
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Course name:</label>
+        <div class="input-group">
+          <input id="name" type="text" class="form-control rounded-lg" placeholder="Course name" maxlength="15" required
+            minlength="5" />
+          <div class="invalid-feedback">
+            Course name must be 5 - 15 characters long.
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Lecturer Name:</label>
+        <div class="input-group">
+          <input id="lecturer" type="text" class="form-control rounded-lg" placeholder="Lecturer Name" maxlength="10"
+            required minlength="2" />
+          <div class="invalid-feedback">
+            Lecturer Name must be 2 - 10 characters long.
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Course Hours:</label>
+        <div class="input-group">
+          <input id="hours" type="number" class="form-control rounded-lg" placeholder="Number of Hours" maxlength="15"
+            required minlength="10" />
+          <div class="invalid-feedback">
+            Number of Hours must be 1 - 3 characters long.
+          </div>
+        </div>
+      </div>
+
+      <button class="btn-hover CourseBtn rounded-lg">
+        Register Course
+      </button>
+      <p class="txt-center mt-3">
+        <a href="#edit">Course list</a>
+      </p>
+    </form>
+  </div>
+
+  <!-- Course table -->
+  <div class="background-img p-2" id="edit">
+    <div class="table-responsive panel panel-default rounded-lg bg-white ">
+      <h2 class="txt-center p-4 h2t">Courses List</h2>
+      <p class="text-center pb-4"><a href="#top">Add a Course</a></p>
+      <table class="table">
+        <thead class="thead-light">
+          <tr>
+            <th>Course number</th>
+            <th>Course name</th>
+            <th>Lecturer Name</th>
+            <th>Number of hours</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="editTr myNone">
+            <td><input id="courseIdTr" type="number" class="form-control rounded-lg" placeholder="Course number"
+                maxlength="15" required minlength="10" readonly />
+            </td>
+            <td><input id="nameTr" type="text" class="form-control rounded-lg" placeholder="Course name" maxlength="15"
+                required minlength="5" /></td>
+            <td><input id="lecturerTr" type="text" class="form-control rounded-lg" placeholder="Lecturer Name"
+                maxlength="10" required minlength="2" /></td>
+            <td>
+              <input id="hoursTr" type="number" class="form-control rounded-lg" placeholder="Number of Hours"
+                maxlength="15" required minlength="10" />
+            </td>
+            <td><a href="#" class="btn btn-info  saveTr">Save</a></td>
+            <td><a href="#" class="btn btn-danger  deleteTr">Discard</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <a href="#" class="float-right p-4 ClearStorage">Clear Storage</a>
+      <a href="#" class="float-left p-4 ClearUser">Remove current user</a>
+
+
+    </div>
+
+  </div>
+  <script src="js/main2.js"></script>
+</body>
+
+</html>
