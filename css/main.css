@@ -3,18 +3,18 @@ h2 {
   padding-left: 0 !important;
 }
 
-#contact {
+#contact-form {
   display: flex;
   flex-wrap: wrap;
   margin: 19.2px 0;
 }
 
-#contact>label {
+#contact-form>label {
   font-size: 19.2px;
 }
 
-#contact>input,
-#contact>textarea
+#contact-form>input,
+#contact-form>textarea
 
 /* .focusing  */
   {
@@ -32,22 +32,22 @@ h2 {
 
 
 /* .focusing:focus  */
-#contact>input:focus,
-#contact>textarea:focus {
+#contact-form>input:focus,
+#contact-form>textarea:focus {
   outline: none;
   /* border-radius: 0; */
 
   border: 2px solid black;
 }
 
-#contact>input:last-child {
+#contact-form>input:last-child {
 
   border: 2px solid #00a7b6;
   color: #00a7b6;
   transition: all 0.2s ease-out;
 }
 
-#contact>input:last-child:hover {
+#contact-form>input:last-child:hover {
 
 
   color: white;

@@ -12,102 +12,9 @@
 </head>
 
 <body>
+  <!-- quick fix css -->
   <style>
-    h2 {
-      padding-left: 0 !important;
-    }
 
-    #contact {
-      display: flex;
-      flex-wrap: wrap;
-      margin: 19.2px 0;
-    }
-
-    #contact>label {
-      font-size: 19.2px;
-    }
-
-    #contact>input,
-    #contact>textarea
-
-    /* .focusing  */
-      {
-      width: 95%;
-      /* border-radius: 0; */
-      border: none;
-      /* display: none; */
-      padding: 7px;
-      margin-top: 5px;
-      margin-bottom: 5px;
-      font-size: 19.2px;
-
-    }
-
-
-
-    /* .focusing:focus  */
-    #contact>input:focus,
-    #contact>textarea:focus {
-      outline: none;
-      /* border-radius: 0; */
-
-      border: 2px solid black;
-    }
-
-    #contact>input:last-child {
-
-      border: 2px solid #00a7b6;
-      color: #00a7b6;
-      transition: all 0.2s ease-out;
-    }
-
-    #contact>input:last-child:hover {
-
-
-      color: white;
-      background-color: #00a7b6;
-    }
-
-    .container-1 {
-      width: 100%;
-      top: 25%;
-      position: absolute;
-      right: 0;
-    }
-
-    .btn-cta {
-      bottom: 5%;
-      position: absolute;
-      z-index: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      background: #00a7b6;
-      color: #fff;
-      transition: all 0.2s ease-out;
-      display: block;
-      padding: 0.5rem 1rem;
-      border: 0;
-
-    }
-
-    .btn-cta:hover {
-      bottom: 4.5%;
-      background: #02cbdd;
-    }
-
-    .job {
-      /* position: relative;
-      overflow: auto; */
-      display: flex;
-      flex-direction: column;
-    }
-
-    .Specialties {
-      /* position: absolute;
-      bottom: 0; */
-      /* align-self: end; */
-      margin-top: auto;
-    }
   </style>
   <div class="container2">
 
@@ -378,7 +285,7 @@
               <i class="fa fa-paper-plane fa-2x" aria-hidden="true"></i>
               <span>
                 <h2 class="text-secondary" style="padding: 0;">quick contact</h2>
-                <form id="contact" action="POST" data-netlify="true">
+                <form id="contact-form" action="POST" data-netlify="true">
                   <label for="fname">Name</label>
                   <input class="focusing" type="text" name="name">
                   <label for="Email">Email</label>
