@@ -110,12 +110,7 @@ h2 {
 
 /* Iframe */
 
-@media screen and (max-width: 768px) {
-  iframe {
-      width: 100vw !important;
-      padding: 0 !important;
-  }
-}
+
 
 .iframex {
   transform: translate3d(-100%, 0, 0);
@@ -134,7 +129,16 @@ h2 {
 }
 @media screen and (max-width: 1350px) {
   .iframex {
-    padding-left: 15% !important;
+    padding-left: 15% ;
+  }
+}
+@media screen and (max-width: 768px) {
+  iframe {
+      width: 100vw !important;
+      padding: 0 !important;
+  }
+  .iframex {
+    padding-left: 0;
   }
 }
 
