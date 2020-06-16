@@ -316,7 +316,9 @@ section {
         transition: all 0.5s ease-out; }
   section#home {
     overflow: hidden;
-    padding: 5rem; }
+    padding: 5rem;
+  padding-bottom: 0;
+  }
     section#home h1 {
       margin-top: 15vh; }
 
