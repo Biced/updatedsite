@@ -549,9 +549,8 @@ ul.cards > li > i {
   opacity: 0; }
 
 @media screen and (max-width: 650px) {
-  section#home {
-    padding: 2.5rem;
-    padding-bottom: 0;
+  .btn-cta {
+    bottom: 15%;
   }
   .left{
     margin: 0;
