@@ -62,7 +62,7 @@ h2 {
 }
 
 .btn-cta {
-  bottom: 5%;
+  bottom: 7%;
   position: absolute;
   z-index: 0;
   left: 50%;
@@ -75,12 +75,12 @@ h2 {
   border: 0;
 
 }
-
+@media only screen and (max-width: 1024px) {
 .btn-cta:hover {
-  bottom: 4.5%;
+  bottom: 6.5%;
   background: #02cbdd;
 }
-
+}
 .job {
   /* position: relative;
   overflow: auto; */
