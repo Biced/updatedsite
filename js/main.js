@@ -114,7 +114,7 @@ class TypeWriter {
 }
 
 // Init On DOM Load
-document.addEventListener("DOMContentLoaded", init);
+// document.addEventListener("DOMContentLoaded", init);
 
 // Init App
 function init() {
@@ -129,14 +129,16 @@ function init() {
 //   inner2.addEventListener("mouseover", zIndex2);
 //   inner1.addEventListener("mouseout", zIndex3);
 //   inner2.addEventListener("mouseout", zIndex4);
-inner1.addEventListener("mouseover", zIndex1);
-inner1.addEventListener("mouseout", zIndex2);
-inner2.addEventListener("mouseover", zIndex3);
-inner2.addEventListener("mouseout", zIndex4);
-inner3.addEventListener("mouseover", zIndex13);
-inner3.addEventListener("mouseout", zIndex23);
-inner4.addEventListener("mouseover", zIndex34);
-inner4.addEventListener("mouseout", zIndex44);
+
+
+// inner1.addEventListener("mouseover", zIndex1);
+// inner1.addEventListener("mouseout", zIndex2);
+// inner2.addEventListener("mouseover", zIndex3);
+// inner2.addEventListener("mouseout", zIndex4);
+// inner3.addEventListener("mouseover", zIndex13);
+// inner3.addEventListener("mouseout", zIndex23);
+// inner4.addEventListener("mouseover", zIndex34);
+// inner4.addEventListener("mouseout", zIndex44);
 
 
 function zIndex1() {
@@ -194,10 +196,10 @@ function closeWin()   // Tested Code
   someIframem.classList.remove('in')
   setTimeout(() => someIframem.parentNode.removeChild(someIframem), 500)
 }
-let getiframes = document.querySelectorAll(".getiframe");
-getiframes.forEach(getiframe => {
-  getiframe.addEventListener('click', genIframe);
-});
+// let getiframes = document.querySelectorAll(".getiframe");
+// getiframes.forEach(getiframe => {
+//   getiframe.addEventListener('click', genIframe);
+// });
 // document.querySelector('#p1').addEventListener('click', genIframe);
 // document.querySelector('#p2').addEventListener('click', genIframe);
 // document.querySelector('#p3').addEventListener('click', genIframe);
