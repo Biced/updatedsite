@@ -455,6 +455,7 @@ section#home h1 {
 .projects img {
   width: 100%;
   border: 3px #000 solid;
+  max-height: 30vh;
 }
 
 .projects img:hover {
